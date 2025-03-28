@@ -215,93 +215,83 @@
             android:textColor="#848484"
             android:textSize="20sp" />
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ralated_place">
+            android:layout_below="@id/ralated_place"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="135dp"
                 android:layout_height="wrap_content"
-                android:scrollbars="none">
+                android:layout_marginEnd="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border_reduis"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/national_musuem" />
+
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:layout_marginTop="8dp"
+                    android:text="National Museum"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="135dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/national_musuem"
-                            android:background="@drawable/border_reduis"
-                            android:clipToOutline="true"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="National Museum"
-                            android:textSize="14sp" />
-                    </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border_reduis"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/independence_monument" />
 
-                    <LinearLayout
-                        android:layout_width="135dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:text="Independence monument"
+                    android:textSize="14sp" />
+            </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/independence_monument"
-                            android:background="@drawable/border_reduis"
-                            android:clipToOutline="true"/>
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="Independence monument"
-                            android:singleLine="true"
-                            android:textSize="14sp" />
-                    </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border_reduis"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/centre_market" />
 
-                    <LinearLayout
-                        android:layout_width="135dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="20dp"
-                        android:gravity="center_horizontal"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/centre_market"
-                            android:background="@drawable/border_reduis"
-                            android:clipToOutline="true"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="National Museum"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-        </ScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="National Museum"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
     </RelativeLayout>
 
 
